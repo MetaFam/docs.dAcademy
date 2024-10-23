@@ -1,36 +1,36 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Welcome to the dAcademy docs!
+description: Learn more about how to use dAcademy and how it is built.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Learn more about how to use dAcademy and how it is built. (Docs are a Work in Progress)
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Overview
+      link: /overview/history
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: Learn how dAcademy is made
+      link: /stack/envio
       icon: external
       variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+## Built on
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Web3" icon="rocket">
+		Built using Web3 technologies such as [AppKit](/stack/reown), [Viem](/stack/viem), [Wagmi](/stack/wagmi) and more.
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="IPFS" icon="add-document">
+		We use [IPFS](/stack/ipfs) and also [Storacha](/stack/storacha) with [UCAN delegation](/stack/ucan).
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Soulbound NFTs" icon="heart">
+		Learn2Earn [Soulbound NFTs](/stack/soulbound).
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Give us a Star" icon="star">
+		Give us a Star on [GitHub](https://github.com/MetaFam/dAcademy).  dAcademy is open-source. Want to contribute?
 	</Card>
 </CardGrid>

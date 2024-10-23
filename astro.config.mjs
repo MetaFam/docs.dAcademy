@@ -2,25 +2,32 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'dAcademy Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/MetaFam/dAcademy',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Overview',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'History of dAcademy', slug: 'overview/history' },
 					],
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Using dAcademy',
+					items: [
+						{ label: 'Join as an Org', slug: 'use/join' },
+						{ label: 'Uploading Playbooks', slug: 'use/uploading' },
+						{ label: 'Chapter Submissions', slug: 'use/submissions' },
+						{ label: 'User Profiles', slug: 'use/userprofiles' },
+					]
+				},
+				{
+					label: 'Stack',
+					autogenerate: { directory: 'stack' },
 				},
 			],
 		}),
